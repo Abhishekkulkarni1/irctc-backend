@@ -1,0 +1,98 @@
+[
+  {
+    "train_id": "123123",
+    "train_number": "11139",
+    "seats": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "arrival_time_at_station": {
+      "Mumbai": "22:10:00",
+      "Solapur": "05:10:00",
+      "Bangalore": "16:00:00"
+    },
+    "stations": [
+      "Mumbai",
+      "Solapur",
+      "Bangalore"
+    ]
+  },
+  {
+    "train_id": "321321",
+    "train_number": "11140",
+    "seats": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "arrival_time_at_station": {
+      "Bangalore": "22:10:00",
+      "Solapur": "05:10:00",
+      "Mumbai": "16:00:00"
+    },
+    "stations": [
+      "Bangalore",
+      "Solapur",
+      "Mumbai"
+    ]
+  }
+]

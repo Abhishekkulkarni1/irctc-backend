@@ -1,0 +1,58 @@
+[
+  {
+    "user_id": "1234",
+    "name": "abhishek",
+    "email": "johndoe@gmail.com",
+    "hashed_password": "hashedPassword",
+    "get_booked_tickets": [
+      {
+        "ticket_date": "2025-05-18T13:19:20Z",
+        "ticket_source": "Mumbai",
+        "ticket_destination": "Bangalore",
+        "train": {
+          "train_id": "123123",
+          "train_number": "11139",
+          "seats": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "stations": {
+            "Mumbai": "22:10:00",
+            "Solapur": "05:10:00",
+            "Bangalore": "16:00:00"
+          }
+        }
+      }
+    ]
+  }
+]
