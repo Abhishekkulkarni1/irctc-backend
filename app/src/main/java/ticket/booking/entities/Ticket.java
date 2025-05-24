@@ -1,29 +1,38 @@
 package ticket.booking.entities;
 
-import java.util.*;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Ticket {
     private String ticketId;
     private String ticketSource;
     private String ticketDestination;
     private String ticketUserId;
     private String ticketDate;
-    private Train trainNumber;
+    private Train train; // ✅ renamed from trainNumber to match JSON key
 
     public Ticket() {
     }
 
-    public Ticket(String ticketId, String ticketSource, String ticketDestination, String ticketUserId, String ticketDate, Train trainNumber) {
+    public Ticket(String ticketId, String ticketSource, String ticketDestination, String ticketUserId, String ticketDate, Train train) {
         this.ticketId = ticketId;
         this.ticketSource = ticketSource;
         this.ticketDestination = ticketDestination;
         this.ticketUserId = ticketUserId;
         this.ticketDate = ticketDate;
-        this.trainNumber = trainNumber;
+        this.train = train;
     }
 
     public String getTicketInfo() {
-        return String.format("Ticket ID: %s belongs to User %s from %s to %s on %s", ticketId, ticketUserId, ticketSource, ticketDestination, ticketDate);
+        return String.format(
+                "Ticket ID: %s belongs to User %s from %s to %s on %s\n%s",
+                ticketId,
+                ticketUserId,
+                ticketSource,
+                ticketDestination,
+                ticketDate,
+                train != null ? train.getTrainInfo() : "No train info"
+        );
     }
 
     public String getTicketId() {
@@ -38,7 +47,7 @@ public class Ticket {
         return ticketSource;
     }
 
-    public void setTicketSource(String source) {
+    public void setTicketSource(String ticketSource) {
         this.ticketSource = ticketSource;
     }
 
@@ -66,12 +75,11 @@ public class Ticket {
         this.ticketDate = ticketDate;
     }
 
-    public Train getTrainNumber() {
-        return trainNumber;
+    public Train getTrain() {
+        return train;
     }
 
-    public void setTrainNumber(Train trainNumber) {
-        this.trainNumber = trainNumber;
+    public void setTrain(Train train) {
+        this.train = train;
     }
-
 }

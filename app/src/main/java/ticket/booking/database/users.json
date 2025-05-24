@@ -1,17 +1,20 @@
 [
   {
-    "user_id": "1234",
     "name": "abhishek",
-    "email": "johndoe@gmail.com",
-    "hashed_password": "hashedPassword",
-    "get_booked_tickets": [
+    "email": null,
+    "password": "abhi",
+    "hashedPassword": "hashedPassword",
+    "userId": "1234",
+    "getBookedTickets": [
       {
-        "ticket_date": "2025-05-18T13:19:20Z",
-        "ticket_source": "Mumbai",
-        "ticket_destination": "Bangalore",
+        "ticketId": null,
+        "ticketSource": "Mumbai",
+        "ticketDestination": "Bangalore",
+        "ticketUserId": null,
+        "ticketDate": "2025-05-18T13:19:20Z",
         "train": {
-          "train_id": "123123",
-          "train_number": "11139",
+          "trainId": "123123",
+          "trainNumber": "11139",
           "seats": [
             [
               0,
@@ -46,13 +49,36 @@
               0
             ]
           ],
-          "stations": {
+          "stations": [
+            "Mumbai",
+            "Solapur",
+            "Bangalore"
+          ],
+          "stationTimes": {
             "Mumbai": "22:10:00",
             "Solapur": "05:10:00",
             "Bangalore": "16:00:00"
-          }
-        }
+          },
+          "trainInfo": "Train ID: 123123 Train No: 11139"
+        },
+        "ticketInfo": "Ticket ID: null belongs to User null from Mumbai to Bangalore on 2025-05-18T13:19:20Z\nTrain ID: 123123 Train No: 11139"
       }
     ]
+  },
+  {
+    "name": "ak",
+    "email": null,
+    "password": "ak123",
+    "hashedPassword": "$2a$10$EnhzJC9cHP9YlluImrvkp.05201DWueMy2WROQNy0gYr2xGF3vTF.",
+    "userId": "1a470d90-fe1a-4a04-9d9d-b401f3e808bc",
+    "getBookedTickets": []
+  },
+  {
+    "name": "ak",
+    "email": null,
+    "password": "ak123",
+    "hashedPassword": "$2a$10$Gy3zDv78JMNbJ0v486/yV.3lsb48/RCKrwn5VmQVI9ceOcs8/AyEO",
+    "userId": "bae2960f-586c-4697-9286-d5420f34e146",
+    "getBookedTickets": []
   }
 ]
